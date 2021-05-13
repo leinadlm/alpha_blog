@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Article.create(title: "first article", description: "Description of first article") # make sure Article is capitalized if using this method
+article = Article.new
+article.title = "second article"
+article.description = "description of second article"
+article.save
+article = Article.new(title: "third article", description: "description of third article")
+article.save
